@@ -12,7 +12,7 @@ import App from './components/App'
 const render = Component => {
 	ReactDOM.render(
 		<AppContainer>
-			<App socket={socket} />
+			<App socket={socket}/>
 		</AppContainer>,
 		document.getElementById('root')
 	)

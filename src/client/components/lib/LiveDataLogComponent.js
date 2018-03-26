@@ -3,11 +3,13 @@ import React, { Component } from 'react'
 class LiveDataLogComponent extends Component {
 	render() {
 		return (
-			<div>
+			<div className='vehicle__live-data'>
 				{
 					// Show data with newest object on top
-					this.props.logs.reverse().map((log) =>
-						<p key={log.time}>{ JSON.stringify(log) }</p>
+					this.props.logs.reverse().map((log, i) =>
+					<div>
+						<p key={log.odo}>{ JSON.stringify(log) }</p>
+					</div>
 					)
 				}
 			</div>
