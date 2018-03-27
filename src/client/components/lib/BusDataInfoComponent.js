@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class LogoComponent extends Component {
+class BusDataInfoComponent extends Component {
 
 
 
@@ -17,4 +17,4 @@ class LogoComponent extends Component {
 	}
 }
 
-export default LogoComponent
+export default BusDataInfoComponent

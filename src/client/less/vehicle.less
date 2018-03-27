@@ -1,4 +1,4 @@
-
+@font-family: 'Orbitron', sans-serif;
 .vehicle__data-info {
   font-weight: 900
 }
@@ -8,4 +8,51 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+}
+
+
+
+.viri-speed {
+	height: 50px;
+	width: 90%;
+	margin: 5px;
+	box-shadow: 2px 2px 12px 0 rgba(0, 0, 0, .2);
+	border-radius: 5px;
+	line-height: 50px;
+	padding: 5px;
+	text-overflow: clip;
+	overflow: hidden;
+	font-weight: 500;
+	font-family: Orbitron;
+}
+
+.vehicle__digital-speedometer {
+  margin: auto;
+}
+
+.digital-speed {
+  display: none;
+}
+
+@media only screen and (max-width: 1233px) {
+  .digital-speed {
+    margin: auto;
+    display: block;
+    float: left;
+    width: 33%;
+    font-family: Orbitron;
+    font-size: 68px;
+  }
+}
+@media only screen and (max-width: 635px) {
+  .digital-speed {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .vehicle__dashboard-header {
+    display: flex;
+    flex-direction: row;
+  }
 }

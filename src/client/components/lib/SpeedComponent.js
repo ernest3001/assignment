@@ -7,7 +7,6 @@ class SpeedometerComponent extends Component {
 			<div style={{
 	    width: "500px",
 	    height: "280px",
-			margin: "auto",
 			display: "block",
 	    background: "#f5f5f5"
 	}}>

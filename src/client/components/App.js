@@ -1,12 +1,13 @@
 import React, { Component } from 'react'
 
 import Header from './lib/Header.js'
-import LogoComponent from './lib/LogoComponent.js'
+import BusDataInfoComponent from './lib/BusDataInfoComponent.js'
 import LiveDataLogComponent from './lib/LiveDataLogComponent.js'
 // Adding GoogleMaps:
 import MapComponent from './lib/MapComponent.js'
 // Add SpeedComponent
 import SpeedComponent from './lib/SpeedComponent.js'
+import DigitalSpeedComponent from './lib/DigitalSpeedComponent.js'
 import BusDataComponent from './lib/BusDataComponent.js'
 
 
@@ -50,7 +51,7 @@ class App extends Component {
 				<article id='app-container'>
 					<Header/>
 					<div className="row">
-			    <div className="col4"><LogoComponent
+			    <div className="col4"><BusDataInfoComponent
 					 name={this.state.name}
 					 logs={ this.state.logs}
 					 time={this.state.time}
@@ -58,7 +59,8 @@ class App extends Component {
 					 lat={this.state.lat}
 					 lon={this.state.lon}
 					 /></div>
-			    <div className="col4"><SpeedComponent speed={this.state.speed}/></div>
+			    <div className="col5"><SpeedComponent speed={this.state.speed}/></div>
+			    <div className="digital-speed"><DigitalSpeedComponent speed={this.state.speed}/></div>
 			    <div className="col4"><BusDataComponent
 					speed={this.state.speed}
 					odo={this.state.odo}

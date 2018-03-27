@@ -5,6 +5,29 @@
   padding: 4px;
 }
 .col4 {
-  width: 33%;
+  display: block;
+  width: 29%;
   float: left;
+}
+
+.col5 {
+  display: flex;
+  justify-content: center;
+  width: 38%;
+  float: left;
+}
+
+@media only screen and (max-width: 1234px) {
+  .col5 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 635px) {
+  .col4 {
+    margin: auto;
+    float: none;
+    clear: both;
+    width: 100%;
+  }
 }
