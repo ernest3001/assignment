@@ -14,7 +14,7 @@ render() {
           <AnyReactComponent
             lat={ this.props.lat}
             lng={ this.props.lon}
-            text={ '<--EturboCar' }
+            text={ '🚌' }
           />
         </GoogleMapReact>
       </div>

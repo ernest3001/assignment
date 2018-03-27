@@ -8,14 +8,10 @@ class LogoComponent extends Component {
 		return (
 
 		<div className='vehicle__dashboard-header'>
-			<p className='viri-speed'>Name: {this.props.name}</p>
-			<p className='viri-speed'>Energy: {this.props.energy}</p>
-			<p className='viri-speed'>time: {this.props.time}</p>
-			<p className='viri-speed'>Gps: {this.props.gps}</p>
-			<p className='viri-speed'>Latitude:: {this.props.lat}</p>
-			<p className='viri-speed'>Longtitude: {this.props.lon}</p>
-			<p className='viri-speed'>Distanse: {this.props.odo}</p>
-			<p className='viri-speed'>Battery: {this.props.soc}</p>
+			<div className='viri-speed'>Driver name: <span className="vehicle__data-info">{this.props.name}</span></div>
+			<div className='viri-speed'>Time: <span className="vehicle__data-info">{this.props.time}</span></div>
+			<div className='viri-speed'>Latitude:: <span className="vehicle__data-info">{this.props.lat}</span></div>
+			<div className='viri-speed'>Longtitude: <span className="vehicle__data-info">{this.props.lon}</span></div>
 		</div>
 		)
 	}

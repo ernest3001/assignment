@@ -6,10 +6,10 @@ class SpeedometerComponent extends Component {
 		return (
 			<div style={{
 	    width: "500px",
-	    height: "300px",
+	    height: "280px",
 			margin: "auto",
 			display: "block",
-	    background: "fff"
+	    background: "#f5f5f5"
 	}}>
 	    <ReactSpeedometer
 	        fluidWidth={true}
