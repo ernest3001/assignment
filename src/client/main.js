@@ -4,9 +4,7 @@ import React    from 'react'
 import ReactDOM from 'react-dom'
 import { AppContainer } from 'react-hot-loader'
 import './less/app.less'
-
 import socket from "./lib/socket"
-
 import App from './components/App'
 
 const render = Component => {
