@@ -7,6 +7,8 @@
 @import (css) "vehicle.less";
 
 @logo-hero-width: 20%;
+@google-map-height: 400px;
+@app-container-width: 100%;
 
 body {
 	margin: 0;
@@ -24,7 +26,7 @@ body {
 }
 
 .google-map {
-	height: 400px;
+	height: @google-map-height;
 }
 
 .vehicle__live-data {
@@ -47,7 +49,7 @@ body {
 	background: @body-background;
 
 	#app-container {
-		width: 100%;
+		width: @app-container-width;
 		text-align: center;
 		display: inline-block;
 

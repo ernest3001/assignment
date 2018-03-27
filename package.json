@@ -1,5 +1,5 @@
 {
-  "name": "ViriCiti_Assignment",
+  "name": "viriciti_assignment",
   "version": "1.0.2",
   "description": "Full webpack configured Node.js, Express, Socket.io, React and Less project",
   "main": "./src/server/index.js",
@@ -59,5 +59,13 @@
     "socket.io": "^2.0.4",
     "socket.io-client": "^2.0.4",
     "underscore": "^1.8.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ernest3001/assignment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ernest3001/assignment/issues"
+  },
+  "homepage": "https://github.com/ernest3001/assignment#readme"
 }
