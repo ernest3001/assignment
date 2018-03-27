@@ -1,4 +1,6 @@
 @font-family: 'Orbitron', sans-serif;
+
+
 .vehicle__data-info {
   font-weight: 900
 }
@@ -10,7 +12,7 @@
 	justify-content: center;
 }
 
-.viri-speed {
+.vehicle__data-panel {
 	height: 50px;
 	width: 90%;
   min-width: 220px;
@@ -27,6 +29,13 @@
 
 .vehicle__digital-speedometer {
   margin: auto;
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: 635px) {
+  .vehicle__digital-speedometer {
+    margin-top: 0;
+  }
 }
 
 .digital-speed {

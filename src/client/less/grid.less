@@ -1,16 +1,15 @@
-
 .row {
   width: 100%;
   height: auto;
   padding: 4px;
 }
-.col4 {
+.vehicle__dashboard-data-panel {
   display: block;
   width: 29%;
   float: left;
 }
 
-.col5 {
+.vehicle__speedometer-panel {
   display: flex;
   justify-content: center;
   width: 38%;
@@ -18,13 +17,13 @@
 }
 
 @media only screen and (max-width: 1234px) {
-  .col5 {
+  .vehicle__speedometer-panel {
     display: none;
   }
 }
 
 @media only screen and (max-width: 635px) {
-  .col4 {
+  .vehicle__dashboard-data-panel {
     margin: auto;
     float: none;
     clear: both;

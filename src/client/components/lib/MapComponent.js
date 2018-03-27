@@ -10,7 +10,7 @@ render() {
       <div className='google-map'>
         <GoogleMapReact
           defaultCenter={ this.props.center }
-          defaultZoom={ 9 }>
+          defaultZoom={ 15 }>
           <AnyReactComponent
             lat={ this.props.lat}
             lng={ this.props.lon}

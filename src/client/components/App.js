@@ -22,7 +22,7 @@ class App extends Component {
 		gps: 0,
 		odo: 0,
 		energy: 0,
-		center: {lat: 52, lng: 5},
+		center: {lat: 52.083737, lng: 5.125597},
 		kmh: 'kmh'
 	}
 
@@ -39,7 +39,7 @@ class App extends Component {
 				soc: Math.round(state.soc * 100) / 100,
 				gps: state.gps,
 				energy: Math.round(state.energy * 100) / 100,
-				center: { lat: state.lat, lng: state.lon},
+				center: { lat: state.gps[0], lng: state.gps[1]},
 				kmh: state.kmh
 			 })
 		})
@@ -51,7 +51,7 @@ class App extends Component {
 				<article id='app-container'>
 					<Header/>
 					<div className="row">
-			    <div className="col4"><BusDataInfoComponent
+			    <div className="vehicle__dashboard-data-panel"><BusDataInfoComponent
 					 name={this.state.name}
 					 logs={ this.state.logs}
 					 time={this.state.time}
@@ -59,24 +59,21 @@ class App extends Component {
 					 lat={this.state.lat}
 					 lon={this.state.lon}
 					 /></div>
-			    <div className="col5"><SpeedComponent speed={this.state.speed}/></div>
+			    <div className="vehicle__speedometer-panel"><SpeedComponent speed={this.state.speed}/></div>
 			    <div className="digital-speed"><DigitalSpeedComponent speed={this.state.speed}/></div>
-			    <div className="col4"><BusDataComponent
+			    <div className="vehicle__dashboard-data-panel"><BusDataComponent
 					speed={this.state.speed}
 					odo={this.state.odo}
 					soc={this.state.soc}
 					energy={this.state.energy}/></div>
 					</div>
-
-
-
-				</article>
-				<MapComponent
-				lat={this.state.lat}
-				lon={this.state.lon}
-				center={this.state.center}
-				/>
-				<article id='log-container'>
+					</article>
+					<MapComponent
+					lat={this.state.lat}
+					lon={this.state.lon}
+					center={this.state.center}
+					/>
+					<article id='log-container'>
 					<LiveDataLogComponent logs={ this.state.logs } />
 				</article>
 			</section>
